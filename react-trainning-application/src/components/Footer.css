@@ -1,0 +1,6 @@
+.main{
+    display: flex;
+    color: blue;
+    font-size: 100px;
+    justify-content: center;
+}
