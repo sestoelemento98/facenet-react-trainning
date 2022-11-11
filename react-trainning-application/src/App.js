@@ -3,16 +3,17 @@ import './App.css';
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
-
-
+import Button from './components/Button';
+import React from 'react';
 
 function App() {
+  const myStyle = {
+    'color': 'green'
+  }
   
   return (
     <div>
-      <Header name="This is header prop"></Header>
-      <Content name="This is prop of content component"></Content>
-      <Footer name="This is prop of footer component"></Footer>     
+        <Button buttonColor={myStyle} buttonText="This text is prop from parent"></Button>
     </div>
   );
 }
