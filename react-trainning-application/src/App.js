@@ -1,8 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Content from './components/Content';
-import Footer from './components/Footer';
+
 import Button from './components/Button';
 import React from 'react';
 
@@ -13,9 +10,12 @@ function App() {
   
   return (
     <div>
-        <Button buttonColor={myStyle} buttonText="This text is prop from parent"></Button>
+        <Button buttonColor={myStyle} buttonText="This text is prop from parent" onClick={handleClick}></Button>
     </div>
   );
 }
 
+const handleClick = () => {
+  alert('Nguyen Thanh Ha')
+}
 export default App;
